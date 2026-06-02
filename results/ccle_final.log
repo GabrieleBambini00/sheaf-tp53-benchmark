@@ -1,0 +1,215 @@
+[oof-folds] rep0 fold0 train=886 test=277 edges=5022 negfrac=0.02
+[oof-folds] rep0 fold1 train=886 test=277 edges=4990 negfrac=0.02
+[oof-folds] rep0 fold2 train=886 test=277 edges=4889 negfrac=0.02
+[oof-folds] rep0 fold3 train=887 test=276 edges=4890 negfrac=0.02
+[oof-folds] rep0 fold4 train=885 test=278 edges=4809 negfrac=0.02
+[oof-folds] rep1 fold0 train=886 test=277 edges=5031 negfrac=0.02
+[oof-folds] rep1 fold1 train=886 test=277 edges=4762 negfrac=0.02
+[oof-folds] rep1 fold2 train=886 test=277 edges=5077 negfrac=0.01
+[oof-folds] rep1 fold3 train=886 test=277 edges=4917 negfrac=0.01
+[oof-folds] rep1 fold4 train=886 test=277 edges=4996 negfrac=0.02
+[oof-folds] rep2 fold0 train=886 test=277 edges=4866 negfrac=0.02
+[oof-folds] rep2 fold1 train=886 test=277 edges=4988 negfrac=0.02
+[oof-folds] rep2 fold2 train=886 test=277 edges=5086 negfrac=0.02
+[oof-folds] rep2 fold3 train=886 test=277 edges=5213 negfrac=0.02
+[oof-folds] rep2 fold4 train=886 test=277 edges=5005 negfrac=0.02
+[oof-folds] rep3 fold0 train=886 test=277 edges=5116 negfrac=0.02
+[oof-folds] rep3 fold1 train=886 test=277 edges=4749 negfrac=0.02
+[oof-folds] rep3 fold2 train=886 test=277 edges=4909 negfrac=0.02
+[oof-folds] rep3 fold3 train=886 test=277 edges=4799 negfrac=0.02
+[oof-folds] rep3 fold4 train=886 test=277 edges=5129 negfrac=0.02
+[oof-folds] rep4 fold0 train=886 test=277 edges=5026 negfrac=0.01
+[oof-folds] rep4 fold1 train=886 test=277 edges=5206 negfrac=0.02
+[oof-folds] rep4 fold2 train=886 test=277 edges=4583 negfrac=0.02
+[oof-folds] rep4 fold3 train=886 test=277 edges=4818 negfrac=0.01
+[oof-folds] rep4 fold4 train=886 test=277 edges=5054 negfrac=0.02
+[rep 0 fold 0] edges=5022 negfrac=0.02
+    LogReg (flat)      done
+    GradBoost (flat)   done
+    GCN (Ravasio)      done
+    GAT (Ravasio best) done
+    Sheaf d12          done
+    Sheaf+flat (hybrid) done
+[rep 0 fold 1] edges=4990 negfrac=0.02
+    LogReg (flat)      done
+    GradBoost (flat)   done
+    GCN (Ravasio)      done
+    GAT (Ravasio best) done
+    Sheaf d12          done
+    Sheaf+flat (hybrid) done
+[rep 0 fold 2] edges=4889 negfrac=0.02
+    LogReg (flat)      done
+    GradBoost (flat)   done
+    GCN (Ravasio)      done
+    GAT (Ravasio best) done
+    Sheaf d12          done
+    Sheaf+flat (hybrid) done
+[rep 0 fold 3] edges=4890 negfrac=0.02
+    LogReg (flat)      done
+    GradBoost (flat)   done
+    GCN (Ravasio)      done
+    GAT (Ravasio best) done
+    Sheaf d12          done
+    Sheaf+flat (hybrid) done
+[rep 0 fold 4] edges=4809 negfrac=0.02
+    LogReg (flat)      done
+    GradBoost (flat)   done
+    GCN (Ravasio)      done
+    GAT (Ravasio best) done
+    Sheaf d12          done
+    Sheaf+flat (hybrid) done
+[rep 1 fold 0] edges=5031 negfrac=0.02
+    LogReg (flat)      done
+    GradBoost (flat)   done
+    GCN (Ravasio)      done
+    GAT (Ravasio best) done
+    Sheaf d12          done
+    Sheaf+flat (hybrid) done
+[rep 1 fold 1] edges=4762 negfrac=0.02
+    LogReg (flat)      done
+    GradBoost (flat)   done
+    GCN (Ravasio)      done
+    GAT (Ravasio best) done
+    Sheaf d12          done
+    Sheaf+flat (hybrid) done
+[rep 1 fold 2] edges=5077 negfrac=0.01
+    LogReg (flat)      done
+    GradBoost (flat)   done
+    GCN (Ravasio)      done
+    GAT (Ravasio best) done
+    Sheaf d12          done
+    Sheaf+flat (hybrid) done
+[rep 1 fold 3] edges=4917 negfrac=0.01
+    LogReg (flat)      done
+    GradBoost (flat)   done
+    GCN (Ravasio)      done
+    GAT (Ravasio best) done
+    Sheaf d12          done
+    Sheaf+flat (hybrid) done
+[rep 1 fold 4] edges=4996 negfrac=0.02
+    LogReg (flat)      done
+    GradBoost (flat)   done
+    GCN (Ravasio)      done
+    GAT (Ravasio best) done
+    Sheaf d12          done
+    Sheaf+flat (hybrid) done
+[rep 2 fold 0] edges=4866 negfrac=0.02
+    LogReg (flat)      done
+    GradBoost (flat)   done
+    GCN (Ravasio)      done
+    GAT (Ravasio best) done
+    Sheaf d12          done
+    Sheaf+flat (hybrid) done
+[rep 2 fold 1] edges=4988 negfrac=0.02
+    LogReg (flat)      done
+    GradBoost (flat)   done
+    GCN (Ravasio)      done
+    GAT (Ravasio best) done
+    Sheaf d12          done
+    Sheaf+flat (hybrid) done
+[rep 2 fold 2] edges=5086 negfrac=0.02
+    LogReg (flat)      done
+    GradBoost (flat)   done
+    GCN (Ravasio)      done
+    GAT (Ravasio best) done
+    Sheaf d12          done
+    Sheaf+flat (hybrid) done
+[rep 2 fold 3] edges=5213 negfrac=0.02
+    LogReg (flat)      done
+    GradBoost (flat)   done
+    GCN (Ravasio)      done
+    GAT (Ravasio best) done
+    Sheaf d12          done
+    Sheaf+flat (hybrid) done
+[rep 2 fold 4] edges=5005 negfrac=0.02
+    LogReg (flat)      done
+    GradBoost (flat)   done
+    GCN (Ravasio)      done
+    GAT (Ravasio best) done
+    Sheaf d12          done
+    Sheaf+flat (hybrid) done
+[rep 3 fold 0] edges=5116 negfrac=0.02
+    LogReg (flat)      done
+    GradBoost (flat)   done
+    GCN (Ravasio)      done
+    GAT (Ravasio best) done
+    Sheaf d12          done
+    Sheaf+flat (hybrid) done
+[rep 3 fold 1] edges=4749 negfrac=0.02
+    LogReg (flat)      done
+    GradBoost (flat)   done
+    GCN (Ravasio)      done
+    GAT (Ravasio best) done
+    Sheaf d12          done
+    Sheaf+flat (hybrid) done
+[rep 3 fold 2] edges=4909 negfrac=0.02
+    LogReg (flat)      done
+    GradBoost (flat)   done
+    GCN (Ravasio)      done
+    GAT (Ravasio best) done
+    Sheaf d12          done
+    Sheaf+flat (hybrid) done
+[rep 3 fold 3] edges=4799 negfrac=0.02
+    LogReg (flat)      done
+    GradBoost (flat)   done
+    GCN (Ravasio)      done
+    GAT (Ravasio best) done
+    Sheaf d12          done
+    Sheaf+flat (hybrid) done
+[rep 3 fold 4] edges=5129 negfrac=0.02
+    LogReg (flat)      done
+    GradBoost (flat)   done
+    GCN (Ravasio)      done
+    GAT (Ravasio best) done
+    Sheaf d12          done
+    Sheaf+flat (hybrid) done
+[rep 4 fold 0] edges=5026 negfrac=0.01
+    LogReg (flat)      done
+    GradBoost (flat)   done
+    GCN (Ravasio)      done
+    GAT (Ravasio best) done
+    Sheaf d12          done
+    Sheaf+flat (hybrid) done
+[rep 4 fold 1] edges=5206 negfrac=0.02
+    LogReg (flat)      done
+    GradBoost (flat)   done
+    GCN (Ravasio)      done
+    GAT (Ravasio best) done
+    Sheaf d12          done
+    Sheaf+flat (hybrid) done
+[rep 4 fold 2] edges=4583 negfrac=0.02
+    LogReg (flat)      done
+    GradBoost (flat)   done
+    GCN (Ravasio)      done
+    GAT (Ravasio best) done
+    Sheaf d12          done
+    Sheaf+flat (hybrid) done
+[rep 4 fold 3] edges=4818 negfrac=0.01
+    LogReg (flat)      done
+    GradBoost (flat)   done
+    GCN (Ravasio)      done
+    GAT (Ravasio best) done
+    Sheaf d12          done
+    Sheaf+flat (hybrid) done
+[rep 4 fold 4] edges=5054 negfrac=0.02
+    LogReg (flat)      done
+    GradBoost (flat)   done
+    GCN (Ravasio)      done
+    GAT (Ravasio best) done
+    Sheaf d12          done
+    Sheaf+flat (hybrid) done
+
+======================================================================
+CELL-LINE OOF RESULTS  (AUROC over 1385 lines, 5x5 grouped folds, thr=0.5)
+======================================================================
+model                   line_AUROC   line_AP  line_bAcc
+----------------------------------------------------------------------
+GradBoost (flat)             0.861     0.890      0.779
+Sheaf+flat (hybrid)          0.822     0.860      0.754
+LogReg (flat)                0.791     0.837      0.727
+Sheaf d12                    0.706     0.766      0.653
+GAT (Ravasio best)           0.638     0.738      0.595
+GCN (Ravasio)                0.595     0.701      0.541
+----------------------------------------------------------------------
+runtime 8230s
+saved C:\Users\Gabriele\OneDrive - Università Commerciale Luigi Bocconi\Desktop\Sheaf Neural Networks\sheaf-tp53-benchmark\results\oof_ccle_final_20260602_191847.json

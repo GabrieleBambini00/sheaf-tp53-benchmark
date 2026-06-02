@@ -1,0 +1,29 @@
+# python
+__pycache__/
+*.pyc
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.venv/
+
+# data + large artifacts (downloaded via scripts, not committed)
+data/
+*.npz
+*.h5ad
+*.mtx
+*.mtx.gz
+*.tsv.gz
+results/oof_folds/
+results/*.pkl
+
+# keep result JSONs + logs + the figure (they are small + are the evidence)
+!results/*.json
+!results/*.log
+!figure_comparison.png
+
+# os / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
