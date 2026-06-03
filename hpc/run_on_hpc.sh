@@ -12,11 +12,14 @@ DIR="$HOME/sheaf-tp53-benchmark"
 
 if [ -d "$DIR/.git" ]; then
   echo "[1/4] updating repo (git pull) ..."
-  cd "$DIR" && git pull --ff-only
+  cd "$DIR" && git fetch origin && git reset --hard origin/main
 else
   echo "[1/4] cloning repo ..."
-  git clone "$REPO_URL" "$DIR" && cd "$DIR"
+  # Remove stale non-git dir if present
+  [ -e "$DIR" ] && rm -rf "$DIR"
+  git clone "$REPO_URL" "$DIR"
 fi
+cd "$DIR"
 
 echo "[2/4] python env ..."
 module load miniconda3 2>/dev/null || true
