@@ -1,6 +1,7 @@
 #!/bin/bash
 #SBATCH --job-name=sheaf_p53
 #SBATCH --partition=stud
+#SBATCH --qos=stud
 #SBATCH --gres=gpu:1
 #SBATCH --cpus-per-task=4
 #SBATCH --mem=16G
