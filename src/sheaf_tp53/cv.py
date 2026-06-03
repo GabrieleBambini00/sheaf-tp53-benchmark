@@ -59,8 +59,11 @@ def _standardize(Xtr, *others):
     return tuple((A - mu) / sd for A in (Xtr, *others))
 
 
+DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
+
+
 def train_torch(model, Xtr, ytr, Xva, yva, *, edge_kind_und, max_epochs=60,
-                patience=8, lr=1e-3, wd=1e-5, batch=256, device="cpu", seed=0):
+                patience=8, lr=1e-3, wd=1e-5, batch=256, device=DEVICE, seed=0):
     set_global_seed(seed)
     model = model.to(device)
     # class weights (inverse frequency)
@@ -103,7 +106,7 @@ def train_torch(model, Xtr, ytr, Xva, yva, *, edge_kind_und, max_epochs=60,
 
 
 @torch.no_grad()
-def predict_torch(model, X, device="cpu", batch=1024):
+def predict_torch(model, X, device=DEVICE, batch=1024):
     model.eval()
     Xt = torch.tensor(X, dtype=torch.float32, device=device)
     probs = []
