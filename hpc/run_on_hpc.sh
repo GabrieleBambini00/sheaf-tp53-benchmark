@@ -28,6 +28,9 @@ if [ ! -x "$DIR/.venv/bin/python" ]; then
   source "$DIR/.venv/bin/activate"
   python -m pip install -q --upgrade pip
   pip install -q torch --index-url https://download.pytorch.org/whl/cu121
+  pip install -q torch_geometric
+  pip install -q pyg_lib torch_scatter torch_sparse torch_cluster torch_spline_conv \
+      -f https://data.pyg.org/whl/torch-2.5.0+cu121.html 2>/dev/null || true
   pip install -q numpy scipy scikit-learn pandas matplotlib
 else
   source "$DIR/.venv/bin/activate"
