@@ -93,6 +93,17 @@ python scripts/make_figure.py --out figure_comparison.png \
     "CCLE bulk (1385 lines, 521 WT)=results/oof_ccle_final_*.json"
 ```
 
+## HPC (GPU, SLURM) — run from GitHub
+The repo clones runnable (preprocessed `.npz` are committed). On the login node:
+```bash
+git clone https://github.com/GabrieleBambini00/sheaf-tp53-benchmark.git
+bash sheaf-tp53-benchmark/hpc/run_on_hpc.sh   # builds a CUDA venv once, then sbatch
+```
+`hpc/run_on_hpc.sh` pulls the latest version, (re)builds the venv if needed, and
+submits `scripts/hpc_validate.sbatch` (partition `stud`, 1 A100 MIG slice). Re-run
+it any time to pull a newer version and re-validate. Results land in `results/`
+and `logs/sheaf_<jobid>.out`.
+
 ## Layout
 ```
 src/sheaf_tp53/

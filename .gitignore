@@ -7,15 +7,17 @@ dist/
 .pytest_cache/
 .venv/
 
-# data + large artifacts (downloaded via scripts, not committed)
-data/
-*.npz
+# raw data (hundreds of MB, downloaded via scripts) — NOT committed
+data/raw/
 *.h5ad
 *.mtx
 *.mtx.gz
 *.tsv.gz
-results/oof_folds/
-results/*.pkl
+# the small preprocessed npz (~6 MB) + labels ARE committed so the repo
+# clones runnable out-of-the-box (full reproduction via scripts/prep_*.py)
+**/oof_folds/
+**/*.pkl
+data/results/
 
 # keep result JSONs + logs + the figure (they are small + are the evidence)
 !results/*.json
