@@ -17,9 +17,10 @@ def spearman_matrix(X: np.ndarray) -> np.ndarray:
     """Spearman correlation among the N gene columns of X (cells x N)."""
     # rank each gene (column) — pandas rank is vectorised + handles ties,
     # then Pearson on ranks == Spearman.
-    ranks = pd.DataFrame(X).rank(axis=0).to_numpy(dtype=np.float64)
+    # .copy() required: pandas >=2.x returns read-only array from to_numpy()
+    ranks = pd.DataFrame(X).rank(axis=0).to_numpy(dtype=np.float64, copy=True)
     ranks -= ranks.mean(axis=0, keepdims=True)
-    std = ranks.std(axis=0, keepdims=True)
+    std = ranks.std(axis=0, keepdims=True).copy()
     std[std < 1e-12] = 1.0
     ranks /= std
     n = ranks.shape[0]
